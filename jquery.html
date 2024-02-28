@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY Assignment</title>
+    <style>
+        h2{
+            color: rgb(0, 108, 54);
+        }
+        li{
+            list-style:none;
+            font-size: 1.2rem;
+            color: rgb(90, 179, 179);
+        }
+        p{
+            color: rgb(74, 0, 144);
+            font: optional;
+            font-size: 1.5rem;
+        }
+        li p{
+            color: red;
+            font-size: 1.2rem;
+        }
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <li><h2>Q1 :- What is jQuery?</h2></li>
+        <li><p><u><b>Solution :-</b></u></p>
+            <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. </p></li>
+            <p><u><b>Features of jquery :</b></u></p>
+        
+            <li>Extensibility through plug-ins</li>
+            <li>DOM manipulation</li>
+            <li>JSON Parsing</li>
+            <li>CSS manipulation</li>
+            <li>HTML manipulation</li>
+            <li>Utilities</li>
+            <li>AJAX</li>
+            <li>DOM element selection</li>
+            <li>HTML event methods</li>
+            <li>Effects and Animations</li>
+           
+    </ul>
+
+    <ul>
+        <li><h2>Q2 :- How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery ,JQuery Animation ?</h2></li>
+        <li><p><u><b>Solution :-</b></u></p></li>
+            <p><b><u>How to Apply CSS Using JQuery :-</u></b></p>
+            <li><p>CSS will be appiled by $ symbol</p></li>
+            <li><p>Syntax : - css("propertyname");</p></li> 
+            <li><p>Example 1 : - $("p").css("background-color");</p></li>   
+            <li><p>Example 2 : - $("p").css({"background-color": "green", "font-size": "100%"});</p></li>   
+            
+            <p><b><u>Add and Remove Class in Jquery</u></b></p>
+            <p>Add Class :-</p>
+            <li><p>Syntax:- $('selector').addClass(class_name);</p></li>
+            <li><p>Example:-  $('#btnAdd').click(function () 
+                                {
+                                     $('h1').addClass("heading box")
+                                })
+            </p></li>
+
+            <p>Remove Class :-</p>
+            <li><p>Syntax:- $('selector').removeClass(class_name);</p></li>   
+            <li><p>Example:-  $('#btnRemove').click(function () 
+                            {
+                                $('h1').removeClass("heading box")
+                            })
+            </p></li> 
+                
+    </ul>
+
+    <ul>
+        <li><h2>Q3 :- How to create slider with animation?</li></h2>
+        <li><p><u><b>Solution :-</b></u></p></li>
+
+        <li><p>Example : -</p></li>
+
+        <!DOCTYPE html> 
+            <html> 
+            <head> 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+            </head> 
+            <body> 
+            <h1 align="center">Silde Down Example</h1> 
+            <center> 
+            <div id="s1">Slide down Effect</div> 
+            <div id="s2">Namaste Bharat</div> 
+            </center> 
+            <script>
+                $(document).ready(function() {
+            $("#s2, #s1").css({
+                width:"100px",
+                padding: "25px",
+                textAlign: "center",
+                backgroundColor: "cyan",
+                border: "solid 3px grey",
+                fontSize:"1.5rem",
+                color:"purple"
+            });
+            $("#s2").css({
+                width:"100px",
+                padding: "70px",
+                width: "100px",
+                display: "none",
+                color: "red",
+                fontSize:"1.8rem"
+            });
+            $("#s1").css({
+                width: "190px"
+            });
+        });
+
+            </script>
+            <script type="text/javascript">  
+                $("#s1").click(function(){ 
+                    $("#s2").slideDown("slow"); 
+                }); 
+            </script> 
+            </body> 
+            </html>
+    </ul>
+</body>
+</html>
